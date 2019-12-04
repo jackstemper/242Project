@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="mainh1">Teamfight Tactics Games</h1>
+        <div class="addGame">
+            <section class="addFlex">
+                <h3>Add Game</h3>
+                <p>
+                    <label for="newGame">Place:</label>
+                    <input id="newGame">
+                </p>
+                <p>
+                    <label for="newLevel">Level:</label>
+                    <input id="newLevel">
+                </p>
+                <p>
+                    <label for="newGameResult">Result:</label>
+                    <select id="newGameResult">
+                        <option value="win">Win</option>
+                        <option value="loss">Loss</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="newGameRanked">Was it Ranked?:</label>
+                    <select id="newGameRanked">
+                        <option value="ranked">Ranked</option>
+                        <option value="unranked">Unranked</option>
+                    </select>
+                </p>
+            </section>
+            <section class="addFlex">
+                <p>
+                    <label for="champs">Champions Owned:</label>
+                    <textarea rows="8" id="champs"></textarea>
+                </p>
+                <p>
+                    <label for="champLvl">Corrisponding Level:</label>
+                    <textarea rows="8" id="champLvl"></textarea>
+                </p>
+                <button id="addGameBtn">Add Game</button>
+            </section>
+        </div>
+
+        <div class="editGame , hidden" id="editForm">
+                <section class="addFlex">
+                    <h3>Edit Game</h3>
+                    <p>
+                        <label for="editGame">Update Place:</label>
+                        <input id="editGame">
+                    </p>
+                    <p>
+                        <label for="editLevel">Update Level:</label>
+                        <input id="editLevel">
+                    </p>
+                    <p>
+                        <label for="editGameResult">Edit Result:</label>
+                        <select id="editGameResult">
+                            <option value="win">Win</option>
+                            <option value="loss">Loss</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="editGameRanked">Was it Ranked?:</label>
+                        <select id="editGameRanked">
+                            <option value="ranked">Ranked</option>
+                            <option value="unranked">Unranked</option>
+                        </select>
+                    </p>
+                </section>
+                <section class="addFlex">
+                    <p>
+                        <label for="editChamps">Edit Champions:</label>
+                        <textarea rows="8" id="editChamps"></textarea>
+                    </p>
+                    <p>
+                        <label for="editChampLvl">Edit Levels:</label>
+                        <textarea rows="8" id="editChampLvl"></textarea>
+                    </p>
+                    <button id="editGameBtn">Edit Game</button>
+                </section>
+            </div>
+
+        <div id="games"></div>
+    </body>
+</html>
